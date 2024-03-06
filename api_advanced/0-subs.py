@@ -2,7 +2,6 @@
 """Script that fetch 10 hot post for a given subreddit."""
 import requests
 
-
 def number_of_subscribers(subreddit):
     """Return the number of subscribers for the given subreddit."""
     url = "https://www.reddit.com/r/{}/about.json".format(subreddit)
@@ -14,6 +13,8 @@ def number_of_subscribers(subreddit):
         if data:
             return data.get('subscribers', 0)
     return 0
+
+
 
 
 
