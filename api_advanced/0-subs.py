@@ -15,7 +15,7 @@ def number_of_subscribers(subreddit):
         int: Number of subscribers, or 0 if an error occurs.
     """
 
-    url = f"https://www.reddit.com/r/{subreddit}/about.json"
+    url ="https://www.reddit.com/r/{subreddit}/about.json"
     headers = {'User-Agent': 'My User Agent 1.0'}
     response = requests.get(url, headers=headers, allow_redirects=False)
 
