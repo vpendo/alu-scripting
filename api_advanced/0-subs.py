@@ -14,3 +14,10 @@ def number_of_subscribers(subreddit):
         if data:
             return data.get('subscribers', 0)
     return 0
+
+print("Output: existing Subreddit")
+print(number_of_subscribers("python"))
+
+# [Expected] OK (2 chars lon
+print("\nOutput: nonexisting subreddit")
+print(number_of_subscribers("nonexistingsubreddit"))
